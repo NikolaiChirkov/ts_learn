@@ -1,11 +1,13 @@
 const person: {
-    name: string,
-    age: number,
-    hobbies: string[]
+    name: string;
+    age: number;
+    hobbies: string[];
+    role: [number, string];
 } = {
     name: 'Nikolai',
     age: 20,
-    hobbies: ['Sports', 'hobbies']
+    hobbies: ['Sports', 'hobbies'],
+    role: [2, 'author']
 }
 
 let favoriteActivities: any[];
