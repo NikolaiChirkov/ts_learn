@@ -1,17 +1,18 @@
 {
   "name": "ts_learn",
   "version": "1.0.0",
-  "description": "",
+  "description": "learn ts with video (https://www.youtube.com/watch?v=BwuLxPH8IDs&ab_channel=Academind)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "npm run build && lite-server",
+    "build": "tsc app.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RedkiyXpen/ts_learn.git"
   },
-  "author": "",
+  "author": "Nikolay_Chirkov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RedkiyXpen/ts_learn/issues"
