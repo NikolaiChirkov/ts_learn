@@ -1,12 +1,22 @@
-var number1 = 5;
-var number2 = 2.8;
-var printResult = true;
-var resultPhrase = "The result is: ";
-var add = function (n1, n2, showResult, phrase) {
-    var result = n1 + n2;
-    if (showResult) {
-        console.log(phrase + result);
-    }
-    return result;
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
+;
+var person = {
+    name: 'Nikolai',
+    age: 20,
+    hobbies: ['Sports', 'hobbies'],
+    role: Role.ADMIN
 };
-add(number1, number2, printResult, resultPhrase);
+var favoriteActivities;
+favoriteActivities = ["Sports", 1];
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
+}
+if (person.role === 0) {
+    console.log('is admin');
+}
