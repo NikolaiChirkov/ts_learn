@@ -1,3 +1,3 @@
-console.log(1);
-console.log(2);
-console.log(3);
+const button = document.querySelector('button')!;
+
+button?.addEventListener('click', () => alert('Clicked'));
