@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && lite-server",
-    "build": "tsc app.ts"
+    "start": "lite-server",
+    "build": "tsc app.ts -w"
   },
   "repository": {
     "type": "git",
