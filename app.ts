@@ -7,3 +7,9 @@ userInput = 'Max';
 if (typeof userInput === 'string') {
     userName = userInput;
 }
+
+const generateError = (message: string, code: number):never => {
+    throw { message: message, code: code };
+}
+
+generateError('An Error occured', 500);
